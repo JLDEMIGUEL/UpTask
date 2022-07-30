@@ -39,7 +39,7 @@ class Email
         $contenido='<html>';
         $contenido.="<p><strong>Hola ".$this->nombre."</strong>, has creado tu cuenta en UpTask. 
         Debes confirmarla accediendo al siguiente enlace</p>";
-        $contenido.="<p>Pulse aquí: <a href='http://localhost:3000/confirmacion?token=".$this->token."'>Confirmar cuenta</a></p>";
+        $contenido.="<p>Pulse aquí: <a href='https://uptask-jldemiguel.herokuapp.com/confirmacion?token=".$this->token."'>Confirmar cuenta</a></p>";
         $contenido.="<p>Si no creaste esta cuenta, ignora el mensaje.</p>";
         $contenido.='</html>';
 
@@ -69,7 +69,7 @@ class Email
 
         $contenido='<html>';
         $contenido.="<p><strong>Hola ".$this->nombre."</strong>, puedes cambiar tu password accediendo al siguiente enlace</p>";
-        $contenido.="<p>Pulse aquí: <a href='http://localhost:3000/passrecover?token=".$this->token."'>Cambiar password</a></p>";
+        $contenido.="<p>Pulse aquí: <a href='https://uptask-jldemiguel.herokuapp.com/passrecover?token=".$this->token."'>Cambiar password</a></p>";
         $contenido.="<p>Si pediste cambio de password, ignora el mensaje.</p>";
         $contenido.='</html>';
 
