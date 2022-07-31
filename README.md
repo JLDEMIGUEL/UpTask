@@ -13,6 +13,7 @@ Uso de VirtualDOM para no sobrecargar el servidor al editar tareas.
 Filtrado de tareas según su estado.
 Edición de perfil: nombre, correo y password
 Se ha utilizado SASS y NPM.
+Darkmode según preferencias de usuario.
 
 
 https://uptask-jldemiguel.herokuapp.com/
