@@ -44,7 +44,7 @@ class TareaController
 
             $tarea = new Tarea($_POST);
             $tarea->proyectoId = $proyecto->id;
-            $tarea->fecha=date('y/m/d');
+            $tarea->fecha=date('Y/m/d');
             $resultado = $tarea->guardar();
             $respuesta = [
                 'tipo' => 'exito',
@@ -74,8 +74,9 @@ class TareaController
                 return;
             }
 
-            $tarea = new Tarea($_POST);
-            $tarea->proyectoId = $proyecto->id;
+            $tarea = Tarea::find($_POST['id']);
+            $tarea->nombre=$_POST['nombre'];
+            $tarea->estado=$_POST['estado'];
 
             $resultado = $tarea->guardar();
             if ($resultado) {
