@@ -2,6 +2,7 @@
 
 <div class="contenedor-sm">
     <div class="contenedor-nueva-tarea">
+        <button type="button" class="borrar-proyecto" id="borrar-proyecto">Borrar proyecto</button>
         <button type="button" class="agregar-tarea" id="agregar-tarea">&#43; Nueva tarea</button>
     </div>
 
