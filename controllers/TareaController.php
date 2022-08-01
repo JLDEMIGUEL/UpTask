@@ -44,12 +44,14 @@ class TareaController
 
             $tarea = new Tarea($_POST);
             $tarea->proyectoId = $proyecto->id;
+            $tarea->fecha=date('y/m/d');
             $resultado = $tarea->guardar();
             $respuesta = [
                 'tipo' => 'exito',
                 'mensaje' => 'Tarea agregada correctamente',
                 'id' => $resultado['id'],
-                'proyectoId' => $proyecto->id
+                'proyectoId' => $proyecto->id,
+                'fecha'=>$tarea->fecha
             ];
             echo json_encode($respuesta);
         }

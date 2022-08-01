@@ -6,9 +6,12 @@
     <ul class="listado-proyectos">
         <?php foreach ($proyectos as $proyecto) { ?>
             <a href="/proyecto?id=<?php echo $proyecto->url; ?>">
-                <li class="proyecto">
+                <li class="proyecto" data-id="<?php echo $proyecto->url;?>">
                     <?php echo $proyecto->proyecto ?>
+                    <progress value="0" max="100"></progress>
+                    <p class="progreso"></p>
                 </li>
+                
             </a>
         <?php } ?>
     </ul>
