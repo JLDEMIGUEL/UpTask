@@ -44,7 +44,7 @@ class TareaController
 
             $tarea = new Tarea($_POST);
             $tarea->proyectoId = $proyecto->id;
-            $tarea->fecha=date('Y/m/d');
+            $tarea->fecha=date('Y-m-d');
             $resultado = $tarea->guardar();
             $respuesta = [
                 'tipo' => 'exito',
